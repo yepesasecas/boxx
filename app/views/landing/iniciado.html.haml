@@ -1,0 +1,65 @@
+.container
+	=render "navbar_login"
+	.row
+		.col-md-12
+			.titulo
+				%h3 Solicita una caja a la direccion indicada.
+			%p Solicita tu caja, y te estaremos confirmando el día y la hora en la que te la llevamos.
+			%a{:class=>"btn btn-primary", type:"button", href: landing_solicitar_path } Solicitar caja a la direccion.
+		.col-md-12
+			.titulo
+				%h3 Mis cajas
+		.col-md-6
+			.media
+				%a{:href => "#", :class=>"pull-left"} 
+					.mi_caja_foto
+						=image_tag "caja_zapatos.jpg", {:class=>"media-object", width:"80"}
+				.media-body
+					%h4.media-heading
+						Caja de checheres de navidad
+						%small caja # 23
+					%p  que no se me olvide pedirlos para diciembre
+					%h4
+						Estado:
+						%small
+							En bodega
+					.btn-group
+						%button{:class=>"btn btn-default btn-sm", type:"button"} Contenido
+						%button{:class=>"btn btn-primary btn-sm", type:"button"} Solicitar
+			%hr/ 
+		.col-md-6
+
+			.media
+				%a{:href => "#", :class=>"pull-left"} 
+					.mi_caja_foto
+						=image_tag "caja_zapatos.jpg", {:class=>"media-object"}
+				.media-body
+					%h4.media-heading 
+						Zapatos viejos pero comodos
+						%small caja # 24
+					%p  Esos zapatos comodos que no quiero botar
+					%h4
+						Estado:
+						%small
+							Enviado a la direccion
+					.btn-group
+						%button{:class=>"btn btn-default btn-sm", type:"button"} Contenido
+						%button{:class=>"btn btn-success btn-sm", type:"button", disabled:"disabled"} Se envío
+			%hr/ 
+		.col-md-6	
+			.media
+				%a{:href => "#", :class=>"pull-left"} 
+					.mi_caja_foto
+						=image_tag "caja_zapatos.jpg", {:class=>"media-object"}
+				.media-body
+					%h4.media-heading 
+						Archivos de Golazzos 2012
+						%small caja # 32
+					%p  Todos los documentos y contratos de golazzos en el 2012.
+					%h4
+						Estado:
+						%small
+							En bodega
+					.btn-group
+						%button{:class=>"btn btn-default btn-sm", type:"button"} Contenido
+						%button{:class=>"btn btn-primary btn-sm", type:"button"} Solicitar

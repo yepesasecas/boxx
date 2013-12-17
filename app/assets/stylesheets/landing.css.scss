@@ -1,0 +1,43 @@
+h1, h2, h3, h4{
+	font-family: 'Raleway', sans-serif;
+}
+
+.img-centrado{
+	margin: auto;
+}
+.titulo{
+	text-align: center;
+	background-color: #EEEEEE;
+	padding: 1px;
+	margin:10px 0px;
+}
+
+.solicita_tu_caja{
+	background-color: #E5E5E5;
+	padding: 2px;
+}
+.mi_caja{
+	background-color: #F5F5F5;
+	margin: 10px 0px;
+}
+.mi_caja_foto{
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	overflow: hidden;
+}
+.mi_caja_titulo{
+	display: inline-block;
+	background-color: #F5F5F5; 
+	vertical-align: top;
+	
+}
+.valor_solicitud{
+	font-size: 2em;
+}
+
+footer{
+	margin-top: 50px;
+	padding: 4px 0px;
+	text-align: center;
+}
