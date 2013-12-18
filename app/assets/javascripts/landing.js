@@ -21,14 +21,9 @@ function restar_caja(){
 
 function aplicar_masonry(){
 	var $container = $('#container');
-	// initialize
-	if ($container.is(':empty')){
-	  alert("grrr");
-	}
-	else{
-		$container.masonry({
-		  itemSelector: '.item'
-		});
+	$container.masonry({
+	  itemSelector: '.item'
+	});
 	}
 }
 
