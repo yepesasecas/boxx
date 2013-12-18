@@ -20,11 +20,11 @@ function restar_caja(){
 }
 
 function aplicar_masonry(){
+	console.log("masonry");
 	var $container = $('#container');
 	$container.masonry({
 	  itemSelector: '.item'
 	});
-	}
 }
 
 $(document).ready(function(){
