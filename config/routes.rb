@@ -10,6 +10,7 @@ Boxx::Application.routes.draw do
    get 'landing/iniciado'
    get 'landing/solicitar'
    get 'landing/solicitud_status'
+    get 'landing/contenido'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
