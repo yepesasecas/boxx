@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
+//= require scrollReveal
+//= require jquery.mmenu
+//= require masonry
+//= require imagesLoaded.min
 //= require_tree .

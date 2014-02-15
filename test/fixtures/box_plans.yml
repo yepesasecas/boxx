@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  box_id: 1
+  plan_id: 1
+  start_day: 2014-01-16
+  end_day: 2014-01-16
+
+two:
+  box_id: 1
+  plan_id: 1
+  start_day: 2014-01-16
+  end_day: 2014-01-16

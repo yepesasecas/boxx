@@ -1,0 +1,4 @@
+#user_sign_navbar
+	-if user_signed_in?
+		%b=current_user.email
+		=link_to "Cerrar Sesion", destroy_user_session_path, method: :delete

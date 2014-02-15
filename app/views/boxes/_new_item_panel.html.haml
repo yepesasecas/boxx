@@ -1,0 +1,11 @@
+.box-panel.item#new-item-panel
+  .box-content
+    =form_for [@box,@box.items.build] do |f|
+      =f.label "Nombre del articulo"
+      %br/ 
+      =f.text_field :name, :class=> "form-control"
+      %br/
+      =f.file_field :picture
+      %br/ 
+      =f.submit :class=> "btn btn-primary btn-block" do
+        Solicita

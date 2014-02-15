@@ -4,6 +4,9 @@ Boxx::Application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.
@@ -72,7 +75,7 @@ Boxx::Application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
-   config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = false
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false

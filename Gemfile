@@ -9,6 +9,11 @@ end
 
 group :development, :test do
 	gem 'sqlite3'
+	gem 'railroady'
+end
+
+group :test do
+	gem 'shoulda'
 end
 
 group :assets do
@@ -17,11 +22,12 @@ group :assets do
   gem 'uglifier'
 end
 gem 'haml'
-gem 'turbolinks'
+#gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem 'devise'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -32,7 +38,7 @@ end
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

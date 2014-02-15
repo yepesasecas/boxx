@@ -1,0 +1,27 @@
+.mmenu-link-div{
+	display: block;
+	position: relative;
+	margin: 10px;
+	#mmenu-link{
+		color: black;
+		text-decoration: none;
+		font-size: 2em;
+	}
+}
+#my-menu{
+	li{
+		a{
+			padding: 20px 0px 20px 20px;
+			font-size: 1.2em;
+		}
+		a:hover{
+			background-color: #000;
+
+		}
+	}
+}
+@media only screen and (min-width: 900px) {
+	.mmenu-link-div{
+		display: none;
+	}
+}

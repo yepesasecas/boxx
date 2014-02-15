@@ -1,0 +1,29 @@
+.box-panel.item#new_box_panel
+  .box-content
+    =form_for @box do |f|
+      =f.label "Nombre de la caja"
+      %br/ 
+      =f.text_field :name, :class=> "form-control"
+      %br/ 
+      =f.label "Una pequeña descripción"
+      %br/ 
+      =f.text_area :description, :class=> "form-control"
+      %br/ 
+      =f.label "¿Por cuantos meses te la guardamos?"
+      %br/ 
+      =f.fields_for :boxPlan do |a|
+        =a.select :plan_id, options_for_select( Plan.selectors ), :class=>"form-control"
+        /------------
+        /CUANDO EL USUARIO QUIERA REGISTRAR LA FECHA EN QUE COMIENZA EL SERVICIO
+        / a.hidden_field :start_day, value: Date.today
+        /------------
+      =f.fields_for :boxStatus do |a|
+        =a.hidden_field :_status_id, value: 1
+        /Atributos del Status
+      %br/ 
+      =f.label "Precio"
+      %p#precio $150,000 pesos 
+      =f.label "Transporte"
+      %p El precio incluye el primer transporte a la direccion y despues a la bodega, cualquier transporte adicional cuesta $20,000.
+      =f.submit :class=> "btn btn-primary btn-block" do
+        Solicita

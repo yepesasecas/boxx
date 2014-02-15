@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: En bodega
+  description: la caja se encuentra en Bodega
+
+two:
+  name: En depacho
+  description: la caja se encuentra camino a la direccion confirmada
+
+three:
+  name: En traslado a bodega
+  description: la caja se encuentra en camino a la bodega
+
+four:
+  name: En casa
+  description: La caja se encuentra en la casa de su propietario
+

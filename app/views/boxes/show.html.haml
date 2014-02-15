@@ -1,0 +1,24 @@
+.header-box
+	.header-content
+		%h1=@box.name
+		%p=@box.description
+		%p
+			%b Status
+			=@box.status.name
+		=link_to "solicitar", "#", :class=> "btn btn-primary "
+.contenedor
+	=render 'layouts/flash_messages'
+	.items#items
+		-@box.items.each do | item|
+			.box-panel.box-item-panel.item
+				.box-item-image
+					=image_tag item.photo_big_url
+				.box-item-content
+					%h4= item.name
+		.box-panel.item.primary-action#new-item-link
+			=link_to "#" do
+				.box-content
+					.add-content
+						%span.glyphicon.glyphicon-plus.add-icon
+						%h3 Agregar un articulo a la caja
+		=render "new_item_panel"

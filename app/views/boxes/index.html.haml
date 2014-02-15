@@ -1,0 +1,26 @@
+.header-box
+	.header-content
+		%h1 Mis cajas
+.contenedor
+	=render "layouts/flash_messages"
+	.boxes#boxes
+		-@boxes.each do | box|
+			.box-panel.item
+				=link_to box do
+					.box-content
+						%h3= box.name
+						%p=box.description
+						%p 
+							%b Estado:
+							=box.status.name
+						%p
+							%b Plan:
+							=box.plan.duration_in_string
+		.box-panel.item.primary-action#new_box_link
+			=link_to new_box_path do
+				.box-content
+					.add-content
+						%span.glyphicon.glyphicon-plus.add-icon
+						%h3 Solicita una caja
+		=render "new_box_panel"
+

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Los manteles de navidad
+  photo_small_url: MyString
+  photo_big_url: MyString
+  box_id: 1
+
+two:
+  name: Los muñecos de papa Noel
+  photo_small_url: MyString
+  photo_big_url: MyString
+  box_id: 1
