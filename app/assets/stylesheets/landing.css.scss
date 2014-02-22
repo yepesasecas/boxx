@@ -1,31 +1,27 @@
 
-footer{
-	margin-top: 50px;
-	padding: 4px 0px;
-	text-align: center;
-}
 
 /*----------------  LANDING HUGO ROJAS  ----------------- */
-body{
 
-}
-html{
-
-}
 .izquierda{
 	display: inline-block;
 	background-color: white;
-	width: 66%;
+	width: 100%;
 }
-.hola{
-	padding: 200px 10px;
-	margin: 10px;
-	background-color: orange;
+.vineta{
+	margin: 5px 5px;
+	border:5px solid #ccc;
+	display: inline-block;
+	background-color: white;
+	vertical-align: top;
+}
+.vinetaContainer{
+	display: inline-block;
+	width: 40%;	
 }
 .derecha{
 	display: inline-block;
 	position:fixed;
-	left:70%;
+	left:78%;
 	top:30%;
 	width: 20%;
 	padding: 10px;
@@ -33,5 +29,37 @@ html{
 	border: 1px solid #ccc;
 	-webkit-border-radius: 1px ;
 	border-radius: 1px;
+	display:none;
+}
+#frase{
+	padding: 0% 10%;
+}
+#logo{
+	position:fixed;
+	z-index:100;
+	display: block;
+	background-color: #fff;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
 }
 
+@media only screen and (min-width: 950px) {
+	#logo{
+		width: 75%;
+		padding: 10px 0px 10px 0px;
+	}
+	#loginDesktop{
+		display: inline;
+		width: 268px !important;
+	}
+	#loginMobile{
+		display: none;
+	}
+	.izquierda{
+		width: 75%;
+	}
+	.vineta{
+		margin: 10px 5px;
+	}
+
+}

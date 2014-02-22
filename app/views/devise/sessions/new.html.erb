@@ -1,20 +1,83 @@
 
-<div class="izquierda centrado">
+<div class="izquierda">
+	<div id="logo" class="centrado">
+		<%=image_tag "logo.png"%>
+	</div>
+	<div id="frase">
+		<p >Frase Mega pero super mega importanteee lorem ipsum y algo mas y VENDEDORAFrase Mega pero super mega importanteee lorem ipsum y algo mas y VENDEDORAFrase Mega pero super mega importanteee lorem ipsum y algo mas y VENDEDORA</p>
+	</div>
+	<div id="loginMobile">
+		<%=link_to "Iniciar Sesion", "#", :class=>"btn btn-primary btn-lg"%>
+		<div>
+			<%=render "devise/shared/links"%>
+		</div>
+	</div>
 	<br><br><br>
-	<h1 data-scrollReveal>Closet Box</h1>
-	<p data-scrollReveal>Frase Mega pero super mega importanteee lorem ipsum y algo mas y VENDEDORA</p>
-	<br><br><br>
-	<div class="hola" data-scrollReveal> grrr</div>
-	<div class="hola" data-scrollReveal> grrr</div>
-	<div class="hola" data-scrollReveal> grrr</div>
-	<div class="hola" data-scrollReveal> grrr</div>
-	<div class="hola" data-scrollReveal> grrr</div>
-	<div class="hola" data-scrollReveal> grrr</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta1.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta2.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta3.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta4.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta5.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta", data-scrollReveal> 
+		<%=image_tag "vineta6.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta", data-scrollReveal> 
+		<%=image_tag "Vineta6a.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta", data-scrollReveal> 
+		<%=image_tag "Vineta6b.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta ", data-scrollReveal> 
+		<%=image_tag "vineta6c.png", :class=>"img-responsive"%>
+	</div>
+		<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta7.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vinetaContainer">
+		<div class="vineta " data-scrollReveal> 
+			<%=image_tag "vineta8.png", :class=>"img-responsive"%>
+		</div>
+		<div class="vineta " data-scrollReveal> 
+			<%=image_tag "vineta9.png", :class=>"img-responsive"%>
+		</div>
+	</div>
+	
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta10.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta11.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta12.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vinetaContainer">
+			<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta13.png", :class=>"img-responsive"%>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta15.png", :class=>"img-responsive"%>
+	</div>
+	</div>
+	<div class="vineta " data-scrollReveal> 
+		<%=image_tag "vineta14.png", :class=>"img-responsive"%>
+	</div>
+
 </div>
-<div class="derecha">
-	<div class="">
+<div class="derecha" id="loginDesktop">
+	<div >
 		<div class="box-content centrado-izquierda">
-			<h4>Conectarme</h4>
+			<h4>Iniciar Sesion</h4>
 			<%= render "layouts/devise_alerts"%>
 			<%= render "devise/sessions/new"%>
 		</div>	
