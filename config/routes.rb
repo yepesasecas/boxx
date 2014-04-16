@@ -1,4 +1,5 @@
 Boxx::Application.routes.draw do
+  get "landing/index"
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -7,12 +8,6 @@ Boxx::Application.routes.draw do
    root 'boxes#index'
    
    get 'landing/index'
-   get 'landing/registrarse'
-   get 'landing/iniciar'
-   get 'landing/iniciado'
-   get 'landing/solicitar'
-   get 'landing/solicitud_status'
-   get 'landing/contenido'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

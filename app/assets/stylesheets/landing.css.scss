@@ -1,65 +1,118 @@
-
-
-/*----------------  LANDING HUGO ROJAS  ----------------- */
-
-.izquierda{
-	display: inline-block;
+#navbar{
 	background-color: white;
-	width: 100%;
+	.container{
+		width: 100%;
+		#logo{
+			display: none;
+		}
+		#logo-min{
+			margin-top: 10px;
+			display: inline-block;
+		}
+		nav{
+			display: inline-block;
+			text-align: left;
+			ul{
+				padding-left:0px; 
+				li{
+					display: inline-block;
+					text-decoration: none;
+
+					a{
+						font-size: 20px;
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}
 }
-.vineta{
-	margin: 5px 5px;
-	border:5px solid #ccc;
-	display: inline-block;
+#hero{
+	height: 200px;
+	background-image: image-url("background-hero.png");
+
+	.hero-sentence{
+		height: 100%;
+		padding:40px;
+		h1{
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 2em;
+			color: white;
+			text-shadow:1px 1px 10px rgb(12,41,56);
+			
+		}
+	}
+}
+#explanation{
+	header{
+		color: #0B95F4;	
+	}
 	background-color: white;
-	vertical-align: top;
-}
-.vinetaContainer{
-	display: inline-block;
-	width: 40%;	
-}
-.derecha{
-	display: inline-block;
-	position:fixed;
-	left:78%;
-	top:30%;
-	width: 20%;
-	padding: 10px;
-	background-color: white;
-	border: 1px solid #ccc;
-	-webkit-border-radius: 1px ;
-	border-radius: 1px;
-	display:none;
-}
-#frase{
-	padding: 0% 10%;
-}
-#logo{
-	position:fixed;
-	z-index:100;
-	display: block;
-	background-color: #fff;
-	width: 100%;
-	border-bottom: 1px solid #ccc;
 }
 
-@media only screen and (min-width: 950px) {
-	#logo{
-		width: 75%;
-		padding: 10px 0px 10px 0px;
-	}
-	#loginDesktop{
-		display: inline;
-		width: 268px !important;
-	}
-	#loginMobile{
-		display: none;
-	}
-	.izquierda{
-		width: 75%;
-	}
-	.vineta{
-		margin: 10px 5px;
-	}
 
+@media only screen and (min-width: 450px) {
+	#navbar{
+		.container{
+			nav{
+				margin-top: 15px;
+				float: right;
+				ul{
+					li{
+						margin-bottom: 19px;
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+	#hero{
+		height: 400px;
+		.hero-sentence{
+			vertical-align: middle;
+		}
+		.hero-sentence{
+			h1{
+				font-size: 3em;
+			}	
+		}
+		
+	}
+}
+
+@media only screen and (min-width: 694px) {
+
+	#navbar{
+		.container{
+		width: 80%;
+		margin: 0 auto;
+			#logo{
+					display: inline-block;
+					img{
+						height:60px;
+					}
+				}
+				#logo-min{
+					display: none;
+				}
+			nav{
+				ul{
+					li{
+						margin-bottom: 4px;
+					}
+				}
+			}
+		}
+	}
+	#hero{
+		height: 600px;
+		.hero-sentence{	
+			width: 80%;
+			margin: 0 auto;
+			h1{
+				font-size: 5em;
+			}	
+		}
+	}
 }
